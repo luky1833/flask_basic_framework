@@ -6,7 +6,7 @@
       
 ## 项目代码
     # 代码仓库地址
-    git clone git@code.aliyun.com:ecdata/ecdata-cmp-py.git
+    git clone https://github.com/luky1833/flask_basic_framework.git
     # 文件路径
     cd ecdata-cmp-py
 ## 介绍
