@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Blueprint
 from flask_restful import Api
-from app.main.blue_print import Hello_v1, Hello_v2
+from app.api.blue_print import Hello_v1, Hello_v2
 
 
 # 注册蓝图
@@ -25,12 +25,15 @@ def create_blueprint_v2():
 
 
 # restful api
+# 设置路由地址
 def register_views(app):
     api = Api(app)
     api.add_resource(Hello_v1, '/hello_v1', endpoint="hello_v1")
+    api.add_resource(Hello_v2, '/hello_v2', endpoint="hello_v2")
 
 
 # restful api
+# 第二套路由地址
 def register_views_v2(app):
     api = Api(app)
     api.add_resource(Hello_v2, '/hello_v2', endpoint="hello_v2")
