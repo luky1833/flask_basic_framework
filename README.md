@@ -25,7 +25,6 @@
             |-controller/
                 |-__init__.py
                 |-logger.py
-                |-best_requests.py
                 |-base.py
             |-api/
                 |-__init__.py
